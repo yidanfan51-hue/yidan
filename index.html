@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>Yellow River Listening Shell</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- A-Frame -->
+    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+    
+    <!-- MindAR for Image Tracking -->
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
+
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+      }
+      /* Hide the default "Scan" UI from MindAR because we built a custom one */
+      .mindar-ui-overlay {
+        display: none !important;
+      }
+      .mindar-ui-loading {
+        display: none !important;
+      }
+      .mindar-ui-scanning {
+        display: none !important;
+      }
+    </style>
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://aistudiocdn.com/react@^19.2.0",
+        "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+        "react/": "https://aistudiocdn.com/react@^19.2.0/",
+        "aframe": "https://aistudiocdn.com/aframe@^1.7.1",
+        "mind-ar/": "https://aistudiocdn.com/mind-ar@^1.2.5/"
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

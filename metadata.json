@@ -1,0 +1,8 @@
+{
+  "name": "Yellow River Listening Shell",
+  "description": "An AR experience where users leave their voice messages to the Yellow River, visualized as drifting fish.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
